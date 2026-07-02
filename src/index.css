@@ -913,7 +913,7 @@ img { max-width: 100%; display: block; }
    ═══════════════════════════════════════ */
 .contact-wrapper {
   text-align: center;
-  max-width: 580px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -931,15 +931,15 @@ img { max-width: 100%; display: block; }
   margin-bottom: 2.5rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .contact-grid {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
   }
   .contact-card {
-    flex: 1 1 calc(33.333% - 1rem);
-    min-width: 160px;
+    flex: 1 1 0;
+    min-width: 0;
   }
 }
 
@@ -966,6 +966,7 @@ img { max-width: 100%; display: block; }
 
 .contact-card svg {
   color: var(--accent);
+  flex-shrink: 0;
 }
 
 .contact-card-label {
@@ -981,7 +982,9 @@ img { max-width: 100%; display: block; }
   color: var(--text-secondary);
   word-wrap: break-word;
   word-break: break-word;
+  overflow-wrap: anywhere;
   text-align: center;
+  width: 100%;
 }
 
 /* ═══════════════════════════════════════
