@@ -3,7 +3,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { 
   FiMail, FiPhone, FiMapPin, FiBriefcase, FiCode, FiTool, 
-  FiFolder, FiArrowUp, FiAward, FiBookOpen
+  FiFolder, FiArrowUp, FiAward, FiBookOpen, FiDownload
 } from 'react-icons/fi';
 import { cvData } from './data/cvData.js';
 
@@ -80,8 +80,13 @@ function App() {
                   İletişime Geç
                 </a>
                 <a href="#projects" className="btn btn-outline">
-                  Projelerimi Gör
+                  Projeler
                 </a>
+                {personal.cvDownloadUrl && (
+                  <a href={personal.cvDownloadUrl} download className="btn btn-outline" style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                    <FiDownload size={16} /> CV İndir
+                  </a>
+                )}
               </motion.div>
 
               <motion.div className="social-links" variants={fadeUp}>

@@ -13,7 +13,8 @@ export const cvData = {
       "Endüstri Mühendisliği + Yazılım çift yetkinlik",
       "Mercedes-Benz Otomotiv staj deneyimi",
       "Bitirme projesi ile süreç optimizasyonu"
-    ]
+    ],
+    cvDownloadUrl: "/cv.pdf"
   },
   education: [
     {
