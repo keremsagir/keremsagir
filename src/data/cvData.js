@@ -7,7 +7,13 @@ export const cvData = {
     phone: "+90 538 465 66 42",
     linkedin: "https://linkedin.com/in/keremsagir/",
     github: "https://github.com/keremsagir",
-    about: "Bilgisayar Programcılığı kökenli kodlama ve algoritma temelim ile Endüstri Mühendisliği'nin analitik bakış açısını harmanlıyorum. Teknik yetkinliklerimi ve yazılım geliştirme tutkumuyla katma değeri yüksek projelerde rol alarak; modern teknolojilerle yenilikçi çözümler üreten, uzun vadeli ve başarılı bir kariyer inşa etmeyi hedefliyorum."
+    about: "Bilgisayar Programcılığı kökenli kodlama ve algoritma temelim ile Endüstri Mühendisliği'nin analitik bakış açısını harmanlıyorum. Teknik yetkinliklerimi ve yazılım geliştirme tutkumuyla katma değeri yüksek projelerde rol alarak; modern teknolojilerle yenilikçi çözümler üreten, uzun vadeli ve başarılı bir kariyer inşa etmeyi hedefliyorum.",
+    statusText: "Aktif olarak iş arıyor",
+    highlights: [
+      "Endüstri Mühendisliği + Yazılım çift yetkinlik",
+      "Mercedes-Benz Otomotiv staj deneyimi",
+      "Bitirme projesi ile süreç optimizasyonu"
+    ]
   },
   education: [
     {
@@ -41,6 +47,7 @@ export const cvData = {
       company: "Mercedes-Benz Otomotiv",
       role: "Intern Software Engineer",
       period: "Ekim 2025 – Devam Ediyor",
+      isActive: true,
       responsibilities: [
         "Kurumsal ölçekli yazılım projelerinde, SDLC (Yazılım Geliştirme Yaşam Döngüsü) süreçlerinin canlı ortamdaki akışını ve ekipler arası koordinasyonu yerinde gözlemledim.",
         "Agile ve SAFe metodolojilerinin büyük ekiplerde nasıl uygulandığını, Sprint planlama ve Daily Scrum rutinlerine katılarak deneyimledim.",
@@ -52,6 +59,7 @@ export const cvData = {
       company: "Teknosa Genel Müdürlük",
       role: "IT",
       period: "Haziran 2013 – Temmuz 2013",
+      isActive: false,
       responsibilities: [
         "Ağ altyapısı ve masaüstü sistemlerin donanım/yazılım bakım süreçlerini yöneterek teknik sorunlara hızlı çözümler ürettim.",
         "Kullanıcı destek operasyonlarını yürüterek, donanım arızalarının tespiti ve giderilmesi süreçlerinde aktif görev aldım."
@@ -77,6 +85,7 @@ export const cvData = {
       id: 1,
       title: "İnsan Kaynakları Süreç Optimizasyonu ve Web Tabanlı Aday Takip Sistemi",
       subtitle: "Bitirme Projesi",
+      isCapstone: true,
       details: [
         "İşe alım süreçleri analiz edilerek, kriter tabanlı, sistematik ve ölçeklenebilir bir aday değerlendirme modeli geliştirildi.",
         "Çalışan performansının analizinde SWARA, CODAS ve COPRAS yöntemleri karşılaştırmalı olarak uygulandı.",
@@ -87,6 +96,7 @@ export const cvData = {
       id: 2,
       title: "Telekomünikasyon Sektöründe Kurumsal Strateji Geliştirme ve Rekabet Analizi",
       subtitle: "",
+      isCapstone: false,
       details: [
         "Bir telekomünikasyon şirketi için PESTEL ve rakip analizleri yapılarak; kurumsal, iş birimi ve fonksiyonel düzeyde uygulanabilir stratejiler geliştirildi."
       ]
@@ -95,8 +105,10 @@ export const cvData = {
       id: 3,
       title: "Karar Ağacı Algoritması Kullanarak Asteroid Tehdit Sınıflandırması ve Analizi",
       subtitle: "",
+      isCapstone: false,
+      highlightStat: { value: "%96", label: "Doğruluk Oranı" },
       details: [
-        "NASA’nın NEO verisetinden elde edilen asteroid verileri kullanılarak karar ağacı algoritmasıyla çarpma riski sınıflandırılmış ve %96 doğruluk oranına sahip model geliştirildi."
+        "NASA'nın NEO verisetinden elde edilen asteroid verileri kullanılarak karar ağacı algoritmasıyla çarpma riski sınıflandırılmış ve %96 doğruluk oranına sahip model geliştirildi."
       ]
     }
   ]
