@@ -45,6 +45,24 @@ function App() {
                 {personal.about}
               </motion.p>
               
+              {personal.additionalInfo && (
+                <motion.div className="additional-info-badge" variants={fadeUp} style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.5rem 1rem',
+                  background: 'rgba(6, 182, 212, 0.1)',
+                  border: '1px solid rgba(6, 182, 212, 0.2)',
+                  borderRadius: '8px',
+                  color: 'var(--accent-cyan)',
+                  fontSize: '0.9rem',
+                  marginBottom: '2rem',
+                  fontWeight: '500'
+                }}>
+                  <span>💡</span> {personal.additionalInfo}
+                </motion.div>
+              )}
+              
               <motion.div className="hero-actions" variants={fadeUp}>
                 <a href="#contact" className="btn btn-primary">
                   İletişime Geç
@@ -75,8 +93,16 @@ function App() {
             >
               <div className="profile-card">
                 <div className="profile-img">
-                  {/* Profil fotoğrafı olmadığında ismin baş harfleri gösterilir */}
-                  <span className="profile-placeholder">
+                  <img 
+                    src={`${personal.github}.png`} 
+                    alt={personal.name} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'block';
+                    }}
+                  />
+                  <span className="profile-placeholder" style={{ display: 'none' }}>
                     {personal.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
@@ -278,7 +304,7 @@ function App() {
         </section>
       </main>
 
-      <Footer info={personal.additionalInfo} />
+      <Footer />
     </>
   );
 }
@@ -289,7 +315,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="container nav-container">
         <a href="#home" className="logo">
-          <span className="gradient-text">KS.</span>
+          <span className="gradient-text">Kerem Sağır</span>
         </a>
         <div className="nav-links">
           <a href="#experience">Deneyim</a>
@@ -303,18 +329,13 @@ function Navbar() {
   );
 }
 
-function Footer({ info }) {
+function Footer() {
   return (
     <footer>
       <div className="container">
         <p className="footer-text">
           © {new Date().getFullYear()} Kerem Sağır. Tüm Hakları Saklıdır.
         </p>
-        {info && (
-          <p className="footer-text" style={{ marginTop: '0.5rem', opacity: 0.6 }}>
-            {info}
-          </p>
-        )}
       </div>
     </footer>
   );
