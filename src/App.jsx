@@ -65,6 +65,16 @@ function App() {
                 {personal.about}
               </motion.p>
               
+              {/* HR Highlights */}
+              <motion.div className="hr-highlights" variants={fadeUp}>
+                {personal.highlights.map((item, idx) => (
+                  <div className="hr-highlight-item" key={idx}>
+                    <FiAward size={18} />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </motion.div>
+
               <motion.div className="hero-actions" variants={fadeUp}>
                 <a href="#contact" className="btn btn-primary">
                   İletişime Geç
