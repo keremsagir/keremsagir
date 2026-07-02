@@ -7,8 +7,7 @@ export const cvData = {
     phone: "+90 538 465 66 42",
     linkedin: "https://linkedin.com/in/keremsagir/",
     github: "https://github.com/keremsagir",
-    about: "Bilgisayar Programcılığı kökenli kodlama ve algoritma temelim ile Endüstri Mühendisliği'nin analitik bakış açısını harmanlıyorum. Teknik yetkinliklerimi ve yazılım geliştirme tutkumuyla katma değeri yüksek projelerde rol alarak; modern teknolojilerle yenilikçi çözümler üreten, uzun vadeli ve başarılı bir kariyer inşa etmeyi hedefliyorum.",
-    additionalInfo: "Engel Durumu: %71 (İşitme ve Görme)"
+    about: "Bilgisayar Programcılığı kökenli kodlama ve algoritma temelim ile Endüstri Mühendisliği'nin analitik bakış açısını harmanlıyorum. Teknik yetkinliklerimi ve yazılım geliştirme tutkumuyla katma değeri yüksek projelerde rol alarak; modern teknolojilerle yenilikçi çözümler üreten, uzun vadeli ve başarılı bir kariyer inşa etmeyi hedefliyorum."
   },
   education: [
     {

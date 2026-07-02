@@ -45,24 +45,6 @@ function App() {
                 {personal.about}
               </motion.p>
               
-              {personal.additionalInfo && (
-                <motion.div className="additional-info-badge" variants={fadeUp} style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  padding: '0.5rem 1rem',
-                  background: 'rgba(6, 182, 212, 0.1)',
-                  border: '1px solid rgba(6, 182, 212, 0.2)',
-                  borderRadius: '8px',
-                  color: 'var(--accent-cyan)',
-                  fontSize: '0.9rem',
-                  marginBottom: '2rem',
-                  fontWeight: '500'
-                }}>
-                  <span>💡</span> {personal.additionalInfo}
-                </motion.div>
-              )}
-              
               <motion.div className="hero-actions" variants={fadeUp}>
                 <a href="#contact" className="btn btn-primary">
                   İletişime Geç
