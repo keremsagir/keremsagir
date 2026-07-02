@@ -431,7 +431,7 @@ function Navbar() {
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
           <a href="#home" className="logo" onClick={(e) => handleNavClick(e, 'home')}>
-            <span className="gradient-text">KS</span>
+            <span className="gradient-text">Kerem Sağır</span>
           </a>
 
           <div className="nav-links">
